@@ -1,5 +1,7 @@
+import { GithubIcon, LinkedinIcon, SunIcon, TwitterIcon } from "@/project files/Icons";
 import Logo from "../logo";
 import Link from "next/link";
+
 
 export default function Header() {
   return (
@@ -10,9 +12,21 @@ export default function Header() {
           <Link href="/" className="mr-2">Home</Link>
           <Link href="/about" className="mx-2">About</Link>
           <Link href="/contact" className="mr-2">Contact</Link>
+          <button>
+            <SunIcon></SunIcon>
+          </button>
         </nav>
         <div>
-          Social Links
+          <a href="http://" className="inline-block w-6 h-6 mr-4">
+            <GithubIcon className="hover:scale-125 transition-all ease duration-200"></GithubIcon>
+          </a>
+          <a href="http://" className="inline-block w-6 h-6 mr-4">
+            <TwitterIcon className="hover:scale-125 transition-all ease duration-200"></TwitterIcon>
+          </a>
+          <a href="http://" className="inline-block w-6 h-6 mr-4">
+            <LinkedinIcon className="hover:scale-125 transition-all ease duration-200"></LinkedinIcon>
+          </a>
+          {/* <a href="http://"></a> */}
         </div>
       </header>
     </div>
